@@ -20,7 +20,7 @@ const ShopItem = (props) => {
             <h3>{price} &#163;</h3>
             {isHovering ? <p className="shop_item_name">{name}</p> : null }
         </div>
-        {preview ? <ShopItemPreview src={src} price={price} name={name} description={description}/> : null }
+        {preview ? <ShopItemPreview click={()=>setPreview(false)} src={src} price={price} name={name} description={description}/> : null }
         </Fragment>
     )
 }
