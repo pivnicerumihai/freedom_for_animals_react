@@ -1,0 +1,25 @@
+[{
+    "name":"T-Shirt",
+    "src":"https://static.r-shop.gr/media/catalog/product/cache/1/thumbnail/2000x2667/9df78eab33525d08d6e5fb8d27136e95/w/_/w_5454080600-04.jpg",
+    "price":"20",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+}
+,
+{
+    "name":"Hat",
+    "src":"https://cdn.shopify.com/s/files/1/1107/3004/products/33505440_2014192102175767_5050503604448788480_n_1024x1024@2x.jpg?v=1581357504",
+    "price":"30",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+},
+{
+    "name":"Gym Shirt",
+    "src":"https://i.pinimg.com/474x/18/9e/12/189e121cfcb5bdc956d4ad546a12ca6a--i-work-out-tank-tops.jpg",
+    "price":"10",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+},
+{
+    "name":"Bag",
+    "src":"https://i.pinimg.com/originals/16/84/87/168487932990a6ce4c0998d57bc0b0fb.jpg",
+    "price":"25",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }]
