@@ -1,8 +1,8 @@
 import React from "react";
 
-const AddButton = () => {
+const AddButton = (props) => {
     return(
-        <button>
+        <button onClick={props.click}>
             Add to Basket
         </button>
     );

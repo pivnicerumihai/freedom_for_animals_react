@@ -38,6 +38,7 @@ const Shop = () => {
                         return (
                             <ShopItem
                                 key={i}
+                                id={el.id}
                                 src={el.src}
                                 price={el.price}
                                 name={el.name}
@@ -51,6 +52,7 @@ const Shop = () => {
                         return (
                             <ShopItem
                                 key={i}
+                                id={el.id}
                                 src={el.src}
                                 price={el.price}
                                 name={el.name}
@@ -64,6 +66,7 @@ const Shop = () => {
                         return (
                             <ShopItem
                                 key={i}
+                                id={el.id}
                                 src={el.src}
                                 price={el.price}
                                 name={el.name}
