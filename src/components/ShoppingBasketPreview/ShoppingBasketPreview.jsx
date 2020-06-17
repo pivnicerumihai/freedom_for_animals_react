@@ -12,7 +12,7 @@ const ShoppingBasketPreview = (props) => {
     return(
         <div className={"shopping_basket_preview " + props.position}>
             <h3>Shopping Basket</h3>
-            <div className="shopping_basket_items">
+          
             {basket.map((el,i)=>{
      
                 return <ShoppingBasketItem 
@@ -24,8 +24,12 @@ const ShoppingBasketPreview = (props) => {
                 increase={()=>dispatch(addItemToBasket(el))}
                 descrease={()=>dispatch(descreaseCount(el))}
                 />
-  })}</div>
-            <p className="total">Total: {total} &#163;</p>
+  })}
+           
+            <div className="total">
+                <button>Checkout</button>
+                <p>Total: {total} &#163;</p></div>
+          
         </div>
     )
 }

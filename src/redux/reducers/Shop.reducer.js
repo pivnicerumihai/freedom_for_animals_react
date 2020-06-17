@@ -1,7 +1,8 @@
 const INITIAL_STATE = {
     items:[],
     counts:{},
-    totalPrice:0
+    totalPrice:0,
+    totalItems:0
 };
 
 const shopReducer = (state = INITIAL_STATE, action)=>{
@@ -9,6 +10,7 @@ const shopReducer = (state = INITIAL_STATE, action)=>{
         case "ADD" :
           if(state.items.some(el=>el.name === action.payload.name)){
             return {
+                        totalItems: state.totalItems + 1,
                         totalPrice:state.totalPrice + parseInt(action.payload.price),
                         items:[...state.items],
                         counts:{
@@ -19,6 +21,7 @@ const shopReducer = (state = INITIAL_STATE, action)=>{
           }
           else{
             return{
+                totalItems: state.totalItems + 1,
                 totalPrice:state.totalPrice + parseInt(action.payload.price),
                         items:[...state.items, action.payload],
                         counts:{
@@ -30,7 +33,7 @@ const shopReducer = (state = INITIAL_STATE, action)=>{
         
         case "REMOVE":{
             return{
-
+                totalItems: state.totalItems - state.counts[action.payload.name],
                 items:[...state.items.filter(el=> el !== action.payload)],
                 counts:{
                     ...state.counts,
@@ -42,6 +45,7 @@ const shopReducer = (state = INITIAL_STATE, action)=>{
 
         case "DESCREASE":{
             return{
+                totalItems: state.totalItems - 1,
                 counts:{
                     ...state.counts,
                     [action.payload.name] : state.counts[action.payload.name] - 1

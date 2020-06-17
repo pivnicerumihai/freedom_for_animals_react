@@ -11,11 +11,13 @@ import ImagePreview from "../components/ImagePreview/ImagePreview";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faFacebookSquare, faTwitter, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { useHistory } from "react-router-dom";
 
 const FirstPage = () => {
     const [firstImageIndex, setFirstImageIndex] = useState(0);
     const [lastImageIndex, setLastImageIndex] = useState(4);
     const [previewImage, setPreviewImage] = useState(null);
+    const history = useHistory();
     return (
         <div className="first_pg_container">
             <div className="top_container">
@@ -39,7 +41,6 @@ const FirstPage = () => {
                             }}
                             className="arrow left" icon={faArrowLeft} size="lg" />
                         {animals.map((el, i) => {
-                            console.log(i);
                             if (lastImageIndex > i && firstImageIndex <= i) {
                                 return <ImageSlideShow click={() => setPreviewImage(i)} key={i} src={el.src} />
                             }
@@ -109,7 +110,8 @@ const FirstPage = () => {
                             <p className="option_name">Fundraise</p>
                         </div>
                         <div className="option" style={{ backgroundImage: `url(${shopping})` }}>
-                            <p className="option_name">Online Shoping</p>
+                            <p className="option_name"
+                            onClick={()=>history.push("/shop")}>Online Shoping</p>
                         </div>
                     </div>
                 </div>

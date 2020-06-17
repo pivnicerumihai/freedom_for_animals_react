@@ -69,12 +69,13 @@ body {
                 cursor: pointer;
             }
 
-            &:focus {
-                background-color: white;
-                color: darkgreen;
-                border-left: 3px solid darkgreen;
-                border-right: 3px solid darkgreen;
-            }
+          
+        }
+        .active {
+            background-color: white;
+            color: darkgreen;
+            border-left: 3px solid darkgreen;
+            border-right: 3px solid darkgreen;
         }
     }
 
@@ -500,11 +501,11 @@ body {
         flex-direction: column;
         align-items: stretch;
         margin-left: 5%;
-        width: 20%;
+        width: 18%;
         height: 250px;
         justify-items: flex-end;
         overflow: hidden;
-        // border:1px solid black;
+         border:2px solid darkgreen;
         border-radius: 15%;
 
         img {
@@ -698,6 +699,22 @@ body {
         background-color: darkgreen;
         font-weight: 500;
         font-size:18px;
+        padding-top:5px;
+        button{
+            width:30%;
+            height:30px;
+            color:#2c4873;
+            border:none;
+            outline:none;
+            font-size:15px;
+            font-weight: 600;
+            border-radius:7px;
+            background-color: #7ca814;
+            &:hover{
+                border:2px solid #2c4873;
+                cursor:pointer;
+            }
+        }
     }
     .shopping_basket_item{
         // width:100%;
@@ -727,10 +744,43 @@ body {
         }
 
     }
+    .checkout_btn{
+        width:40%;
+        margin-left:30%;
+        height:40px;
+        margin-top:10px;
+    }
 }
 .preview_top{
     top:8.5em;
 }
 .preview_scrolling{
     top:3em;
+}
+
+.checkout_page{
+    
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .checkout_container{
+        width:60%;
+        height:75%;
+       background-color: white;;
+       border-radius:7px;
+       border:2px solid darkgreen;
+       display:flex;
+        flex-direction: column;
+        align-items: center;
+       h2{
+           padding-top:5px;
+           color:#2c4873;
+       }
+       h3{
+           color:darkgreen;
+           padding-top:5px;
+       }
+    }
 }

@@ -8,6 +8,7 @@ import ShoppingBasketPreview from "../components/ShoppingBasketPreview/ShoppingB
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
 
+
 const Shop = () => {
 
     const [preview, setPreview] = useState(false);
@@ -26,10 +27,13 @@ const Shop = () => {
     return (
         <Fragment>
             {preview ? <ShoppingBasketPreview position={previewPosition}/> : null}
+            <div className="shopping_basket_icon">
             <FontAwesomeIcon
                 onClick={() => setPreview(!preview)}
                 className={"shopping-bag " + position}
                 icon={faShoppingBasket} size="3x" />
+                <p></p>
+                </div>
             <div className="shop_page">
                 <h2>Apparel</h2>
                 <div className="apparel">
