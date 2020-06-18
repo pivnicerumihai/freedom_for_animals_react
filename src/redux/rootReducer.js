@@ -1,12 +1,13 @@
-import {persistReducer} from "redux-persist";
-import sessionStorage from "redux-persist/lib/storage/session";
 import shopReducer from "./reducers/Shop.reducer";
 import {  combineReducers } from "redux";
 
+import {persistReducer} from "redux-persist";
+import sessionStorage from "redux-persist/lib/storage/session";
+
 const persistConfig = {
-    key: "root",
+    key:`root`,
     storage: sessionStorage,
-    whitelist: ['shopReducer']
+    whitelist: ['shop']
 }
 
 const rootReducer = combineReducers({

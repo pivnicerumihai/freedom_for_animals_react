@@ -763,9 +763,11 @@ body {
     height:100vh;
     width:100%;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     .checkout_container{
+        overflow: auto;
         width:60%;
         height:75%;
        background-color: white;;
@@ -782,5 +784,30 @@ body {
            color:darkgreen;
            padding-top:5px;
        }
+       .order_details{
+           color:#2c4873;
+           height:100%;
+           .shopping_basket_item{
+               margin-top:20px;
+               display:flex;
+               height:25%;
+               justify-content: space-around;
+               align-items: center;
+               img{
+                   object-fit: contain;
+                   height:100%;
+                   width:30%;
+               }
+           }
+           .remove_item{
+               &:hover{
+                   cursor: pointer;
+                   color:darkgreen;
+               }
+           }
+       }
+    }
+    .stripe{
+        margin-top:10px;
     }
 }
